@@ -33,9 +33,6 @@ class MsalWidget(DOMWidget):
     container_style = Dict({}).tag(sync=True)
     content = Instance(VBox).tag(sync=True, **widget_serialization)
 
-    @default('content')
-    def _content_default(self):
-        return VBox(value="Content")
 
 
 
