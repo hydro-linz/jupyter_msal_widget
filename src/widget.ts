@@ -126,7 +126,6 @@ export class MsalWidgetView extends DOMWidgetView {
 
     // PARENT
     this.el.appendChild(this._button);
-    this.el.classList.add('widget-container');
 
     this.modifyStyle();
   };

@@ -2,10 +2,6 @@
   --button-main-color: 0, 117, 190;
 }
 
-.widget-container {
-  padding: 8px 16px;
-}
-
 .button {
   display: none;
 }
