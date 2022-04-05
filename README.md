@@ -95,7 +95,7 @@ This requires a .npmrc at your user home directory with password/token
 # Erase the /dist directory if not empty
 
 # To generate the /dist folder
-npm build:prod
+npm run build:prod
 
 # Deploy it to NPM
 npm publish
@@ -125,11 +125,11 @@ pip install twine
 python setup.py sdist
 
 # Uploads the current /dist to testpypi
-twine upload -repository testpypi dist/*
+twine upload --repository testpypi dist/*
 
 # Test the uploaded component
 pip install -i https://test.pypi.org/simple/ jupyter-msal-widget
 
 # If everything looks fine, deploy to pipy
-twine upload -repository pypi dist/*
+twine upload --repository pypi dist/*
 ```
