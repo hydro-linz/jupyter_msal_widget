@@ -91,6 +91,7 @@ export class MsalWidgetView extends DOMWidgetView {
     );
 
     css(this._button, this.model.get('button_style'));
+    css(this.el, this.model.get('container_style'));
   };
 
   constructor(args: MsalWidgetViewArgs) {

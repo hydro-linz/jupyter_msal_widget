@@ -30,6 +30,7 @@ class MsalWidget(DOMWidget):
     display_logout = Bool(False).tag(sync=True)
     button_main_color = Unicode('0, 117, 190').tag(sync=True)
     button_style = Dict({"float":"right"}).tag(sync=True)
+    container_style = Dict({}).tag(sync=True)
     content = Instance(VBox).tag(sync=True, **widget_serialization)
 
     @default('content')
